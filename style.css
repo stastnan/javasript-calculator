@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+
+.calculator-body {
+    background-color: #13223D;
+    display: grid;
+    grid-template-areas: 
+        "display display display display"
+        "seven eight nine divide"
+        "four five six multi"
+        "one two three minus"
+        "null ac equal plus"; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1em;
+    width: 24rem;
+    height: 30rem;
+    padding: 3.5rem;
+    border-radius: 5%;
+}
+
+button {
+    
+    border-radius: 100%;
+    border: none;
+    font-size: 1.5em;
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 0.2em;
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.function {
+    color: #343AEE;
+}
+
+.button.number, .button.operation {
+    color: #ed7a30
+}
+
+.display {
+    grid-area: display;
+    background-color: #FFFFFF;
+    padding: 1.3rem 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 1.2rem;
+    height: 4em;
+    overflow: auto;
+
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: null;
+}
+
+#ac {
+    grid-area: ac;
+}
+
+#plus {
+    grid-area: plus;
+}
+
+#minus {
+    grid-area: minus;
+}
+
+#multi {
+    grid-area: multi;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+p {
+    text-align: right;
+    color: #057E18;
+    font-size: 1.5em;
+}
+
